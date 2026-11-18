@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0B0F17;
+    color: #F1F5F9;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom dark scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0B0F17;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #243147;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #32425E;
+  }
+}
+
+/* Custom glow utility */
+.glow-emerald-sm {
+  box-shadow: 0 0 15px rgba(0, 229, 168, 0.25);
+}
+.glow-coral-sm {
+  box-shadow: 0 0 15px rgba(255, 90, 54, 0.25);
+}
+
+/* Range input styling for sleek sliders */
+input[type="range"] {
+  accent-color: #00E5A8;
+}
+
+/* Prevent tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
